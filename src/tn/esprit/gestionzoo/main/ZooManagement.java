@@ -2,6 +2,7 @@ package tn.esprit.gestionzoo.main;
 
 import java.util.Scanner;
 
+import tn.esprit.gestionzoo.entities.*;
 public class ZooManagement {
     public static void main(String[] args) {
 //        int nbrCages = 20;
@@ -34,5 +35,18 @@ public class ZooManagement {
         System.out.println(myZoo);
         System.out.println(Zoo.comparerZoo(belle,myZoo));
         System.out.println(myZoo.isZooFull());
+    ////////////////////////////////////////////////
+        Terrestrial tresstrial = new Terrestrial("poila", "koko", 4, true, 2);
+        Dolphin dolphin = new Dolphin("delpha", "momo", 5, true, "rr", 17.5f);
+        Penguin penguin = new Penguin("ccocoo", "aaccaa", 3, true, "Orrcean", 27.3f);
+
+        System.out.println(tresstrial);
+        System.out.println(dolphin);
+        System.out.println(penguin);
+
+        dolphin.swim();
+        penguin.swim();
+
+
     }
 }
