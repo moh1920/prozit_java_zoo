@@ -26,5 +26,11 @@ public class ZooManagement {
         System.out.println(myZoo);
         System.out.println(myZoo.toString());
         System.out.println(lion.toString());
+        //////////////////////////////////////////////////////
+        myZoo.addAnimal(lion);
+        myZoo.addAnimal(lion);
+        System.out.println(myZoo);
+        System.out.println(Zoo.comparerZoo(belle,myZoo));
+        System.out.println(myZoo.isZooFull());
     }
 }
